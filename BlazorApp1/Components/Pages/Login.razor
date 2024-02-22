@@ -19,6 +19,7 @@
             <label for="password">Password:</label>
             <input id="password" class="form-control " @bind="loginModel.Password" type="password" />
             <i class="bi bi-eye-fill"></i>
+            <i class="bi bi-eye-slash-fill"></i>
         </div>
 
         <div class="d-flex flex-row justify-content-center m-4">
@@ -33,7 +34,7 @@
 @code {
     private LoginModel loginModel = new LoginModel();
 
-    private boolean showPassword = false;
+    private Boolean showPassword = false;
 
     private async Task HandleValidSubmit()
     {
