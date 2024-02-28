@@ -4,3 +4,13 @@
 <PageTitle>Profile</PageTitle>
 
 <h1>Profile</h1>
+
+<button type="button" class="btn btn-warning" @onclick="ConsoleMsg">Click me!</button>
+
+
+@code {
+    private void ConsoleMsg()
+    {
+        Console.Write("hello");
+    }
+}
